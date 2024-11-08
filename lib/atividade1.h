@@ -58,8 +58,8 @@ void vogal (char letra){
     else if (letra == 'u'){
         printf ("U é vogal");
     }
-    else{
-        printf ("%c é consoante", letra);
+    else {
+        printf ("%c é vogal", letra);
     }
 }
 
@@ -71,5 +71,32 @@ void vogal1(char letra){
     }
     else{
         printf ("A letra digitada é consoante");
+    }
+}
+
+void reajuste (float salario){
+    float valor_aumento;
+    float novo_salario;
+    if (salario <= 280){
+        valor_aumento = salario * (20.0 / 100);
+        novo_salario = salario + valor_aumento;
+        printf ("O salário antigo é %2.f e foi reajustado em 20%. O valor de aumento é %2.f e o novo salário é %2.f\n", salario,valor_aumento,novo_salario);
+    }
+
+    else if(salario <= 700){
+        valor_aumento = salario * (15.0 / 100);
+        novo_salario = salario + valor_aumento;
+        printf ("O salário antigo é %2.f e foi reajustado em 15%. O valor de aumento é %2.f e o novo salário é %2.f\n", salario,valor_aumento,novo_salario);
+    }
+
+    else if(salario <= 1500){
+        valor_aumento = salario * (10.0 / 100);
+        novo_salario = salario + valor_aumento;
+        printf ("O salário antigo é %2.f e foi reajustado em 10%. O valor de aumento é %2.f e o novo salário é %2.f\n", salario,valor_aumento,novo_salario);
+    }
+    else{
+        valor_aumento = salario * (5.0 / 100);
+        novo_salario = salario + valor_aumento;
+        printf ("O salário antigo é %2.f e foi reajustado em 5%. O valor de aumento é %2.f e o novo salário é %2.f\n", salario,valor_aumento,novo_salario);
     }
 }
